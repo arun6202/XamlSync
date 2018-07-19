@@ -3,10 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XFPlayground.Playground">
 
-    <BoxView Color="Red"
-             WidthRequest="160"
-             HeightRequest="160"
-             VerticalOptions="Center" 
-             HorizontalOptions="Center" />
+  <BoxView Color="CornflowerBlue"
+           WidthRequest="160"
+           HeightRequest="160"
+           VerticalOptions="Center"
+           HorizontalOptions="Center" />
 
 </ContentPage>

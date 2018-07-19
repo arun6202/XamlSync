@@ -9,9 +9,10 @@ using Xamarin.Forms.Xaml;
 
 namespace XFPlayground
 {
-	public partial class Playground : ContentPage
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class Sample : ContentView
 	{
-		public Playground ()
+		public Sample ()
 		{
 			InitializeComponent ();
 		}
