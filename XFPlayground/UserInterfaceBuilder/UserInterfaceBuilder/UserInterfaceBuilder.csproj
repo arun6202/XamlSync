@@ -1,0 +1,198 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>XamarinFormsStarterKit.UserInterfaceBuilder</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="UserInterfaceBuilderTests\obj\UserInterfaceBuilderTests.csproj.nuget.g.props" />
+    <None Remove="UserInterfaceBuilderTests\obj\project.assets.json" />
+    <None Remove="UserInterfaceBuilderTests\obj\UserInterfaceBuilderTests.csproj.nuget.cache" />
+    <None Remove="UserInterfaceBuilderTests\obj\Debug\netstandard2.0\UserInterfaceBuilderTests.AssemblyInfoInputs.cache" />
+    <None Remove="UserInterfaceBuilderTests\obj\project.assets.json" />
+    <None Remove="Preserver\Preserve.xml" />
+    <None Remove="Preserver\Text.xml" />
+    <None Remove="SVGImages\HorizontalStripes.svg" />
+    <None Remove="SVGImages\GreenStripes.svg" />
+    <None Remove="SVGImages\Honeycomb.svg" />
+    <None Remove="SVGImages\Chevrons.svg" />
+    <None Remove="SVGImages\CarbonFiber.svg" />
+    <None Remove="SVGImages\MicrobialMat.svg" />
+    <None Remove="SVGImages\Dance.svg" />
+    <None Remove="SVGImages\Checkerboard.svg" />
+    <None Remove="SVGImages\Waves.svg" />
+    <None Remove="SVGImages\VerticalStripes.svg" />
+    <None Remove="SVGImages\Shippo.svg" />
+    <None Remove="SVGImages\HalfRombes.svg" />
+    <None Remove="SVGImages\Transparent.svg" />
+    <None Remove="SVGImages\SimpleHorizontal.svg" />
+    <None Remove="SVGImages\WhiteCarbon.svg" />
+    <None Remove="SVGImages\CrossStripes.svg" />
+    <None Remove="SVGImages\SubtleDots.svg" />
+    <None Remove="SVGImages\ThinStripes.svg" />
+    <None Remove="SVGImages\SpeckledNoise.svg" />
+    <None Remove="SVGImages\BlueprintGrid.svg" />
+    <None Remove="SVGImages\Argyle.svg" />
+    <None Remove="SVGImages\Shapes\Circle.svg" />
+    <None Remove="SVGImages\Shapes\EmptyStar.svg" />
+    <None Remove="SVGImages\Shapes\Rectangle.svg" />
+    <None Remove="SVGImages\Shapes\RoundedRectangle.svg" />
+    <None Remove="SVGImages\Shapes\Star.svg" />
+    <None Remove="SVGImages\Cat.svg" />
+    <None Remove="Images\SVG\Shapes\Circle.svg" />
+    <None Remove="Images\SVG\Shapes\EmptyStar.svg" />
+    <None Remove="Images\SVG\Shapes\Rectangle.svg" />
+    <None Remove="Images\SVG\Shapes\RoundedRectangle.svg" />
+    <None Remove="Images\SVG\Shapes\Star.svg" />
+    <None Remove="Images\PNG\Patterns\argyle.png" />
+    <None Remove="Images\PNG\Patterns\brady-bunch.png" />
+    <None Remove="Images\PNG\Patterns\carbon-fibre.png" />
+    <None Remove="Images\PNG\Patterns\chocolate-weave.png" />
+    <None Remove="Images\PNG\Patterns\cross.png" />
+    <None Remove="Images\PNG\Patterns\half-rombes.png" />
+    <None Remove="Images\PNG\Patterns\honeycomb.png" />
+    <None Remove="Images\PNG\Patterns\houndstooth.png" />
+    <None Remove="Images\PNG\Patterns\polka-dot.png" />
+    <None Remove="Images\PNG\Patterns\stairs.png" />
+    <None Remove="Images\PNG\Patterns\stars.png" />
+    <None Remove="Images\PNG\Patterns\tablecloth.png" />
+    <None Remove="Images\PNG\Patterns\upholstery.png" />
+    <None Remove="Images\PNG\Patterns\waves.png" />
+    <None Remove="Images\PNG\Patterns\yin-yang.png" />
+    <None Remove="Images\PNG\Patterns\marrakesh.png" />
+    <None Remove="Images\PNG\Patterns\tartan.png" />
+    <None Remove="Images\PNG\Patterns\arrows.png" />
+    <None Remove="Images\PNG\Patterns\hearts.png" />
+    <None Remove="Images\PNG\Patterns\seigaiha.png" />
+    <None Remove="Images\PNG\Patterns\japanese-cube.png" />
+    <None Remove="Images\PNG\Patterns\microbial-mat.png" />
+    <None Remove="Images\PNG\Patterns\pyramid.png" />
+    <None Remove="Images\PNG\Patterns\shippo.png" />
+    <None Remove="Images\PNG\Patterns\blueprint-grid.png" />
+    <None Remove="Images\PNG\Patterns\bricks.png" />
+    <None Remove="Images\PNG\Patterns\weave.png" />
+    <None Remove="Images\PNG\Patterns\carbon.png" />
+    <None Remove="Images\PNG\Patterns\checkerboard.png" />
+    <None Remove="Images\PNG\Patterns\cicada-stripes.png" />
+    <None Remove="Images\PNG\Patterns\diagonal-checkerboard.png" />
+    <None Remove="Images\PNG\Patterns\diagonal-stripes.png" />
+    <None Remove="Images\PNG\Patterns\horizontal-stripes.png" />
+    <None Remove="Images\PNG\Patterns\steps.png" />
+    <None Remove="Images\PNG\Patterns\vertical-stripes.png" />
+    <None Remove="Images\PNG\Patterns\zig-zag.png" />
+    <None Remove="Images\SVG\Patterns\chevrons.svg" />
+    <None Remove="Images\SVG\Patterns\concentric_circles.svg" />
+    <None Remove="Images\SVG\Patterns\diamonds.svg" />
+    <None Remove="Images\SVG\Patterns\diamonds_with_base_color.svg" />
+    <None Remove="Images\SVG\Patterns\diamonds_with_color.svg" />
+    <None Remove="Images\SVG\Patterns\hexagons.svg" />
+    <None Remove="Images\SVG\Patterns\mosaic_squares.svg" />
+    <None Remove="Images\SVG\Patterns\nested_squares.svg" />
+    <None Remove="Images\SVG\Patterns\octagons.svg" />
+    <None Remove="Images\SVG\Patterns\overlapping_circles.svg" />
+    <None Remove="Images\SVG\Patterns\overlapping_rings.svg" />
+    <None Remove="Images\SVG\Patterns\plaid.svg" />
+    <None Remove="Images\SVG\Patterns\plus_signs.svg" />
+    <None Remove="Images\SVG\Patterns\sine_waves.svg" />
+    <None Remove="Images\SVG\Patterns\squares.svg" />
+    <None Remove="Images\SVG\Patterns\tessellation.svg" />
+    <None Remove="Images\SVG\Patterns\triangles.svg" />
+    <None Remove="Images\SVG\Patterns1\test.svg" />
+    <None Remove="Images\SVG\Patterns1\BlueprintGrid.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="UserInterfaceBuilderTests\Class1.cs" />
+    <Compile Remove="UserInterfaceBuilderTests\obj\Debug\netstandard2.0\UserInterfaceBuilderTests.AssemblyInfo.cs" />
+    <Compile Remove="UserInterfaceBuilderTests\Class1.cs" />
+    <Compile Remove="UserInterfaceBuilderTests\LayoutBuilderTest.cs" />
+    <Compile Remove="Faker\Faker.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="SkiaSharp.Extended" Version="1.60.0" />
+    <PackageReference Include="SkiaSharp.Svg" Version="1.60.0" />
+    <PackageReference Include="Acr.UserDialogs" Version="7.0.1" />
+    <PackageReference Include="Xamarin.Forms" Version="3.1.0.637273" />
+    <PackageReference Include="Bogus" Version="22.3.1" />
+    <PackageReference Include="SkiaSharp.Views.Forms" Version="1.60.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Preserver\" />
+    <Folder Include="Builders\" />
+    <Folder Include="UIElements\" />
+    <Folder Include="Images\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Images\SVG\" />
+    <Folder Include="Images\SVG\Shapes\" />
+    <Folder Include="Images\PNG\" />
+    <Folder Include="Images\PNG\Patterns\" />
+    <Folder Include="Images\SVG\Patterns\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Preserver\Preserve.xml" />
+    <EmbeddedResource Include="Images\SVG\Shapes\Circle.svg" />
+    <EmbeddedResource Include="Images\SVG\Shapes\EmptyStar.svg" />
+    <EmbeddedResource Include="Images\SVG\Shapes\Rectangle.svg" />
+    <EmbeddedResource Include="Images\SVG\Shapes\RoundedRectangle.svg" />
+    <EmbeddedResource Include="Images\SVG\Shapes\Star.svg" />
+    <EmbeddedResource Include="Images\PNG\Patterns\argyle.png" />
+    <EmbeddedResource Include="Images\PNG\Patterns\brady-bunch.png" />
+    <EmbeddedResource Include="Images\PNG\Patterns\carbon-fibre.png" />
+    <EmbeddedResource Include="Images\PNG\Patterns\chocolate-weave.png" />
+    <EmbeddedResource Include="Images\PNG\Patterns\cross.png" />
+    <EmbeddedResource Include="Images\PNG\Patterns\half-rombes.png" />
+    <EmbeddedResource Include="Images\PNG\Patterns\honeycomb.png" />
+    <EmbeddedResource Include="Images\PNG\Patterns\houndstooth.png" />
+    <EmbeddedResource Include="Images\PNG\Patterns\polka-dot.png" />
+    <EmbeddedResource Include="Images\PNG\Patterns\stairs.png" />
+    <EmbeddedResource Include="Images\PNG\Patterns\stars.png" />
+    <EmbeddedResource Include="Images\PNG\Patterns\tablecloth.png" />
+    <EmbeddedResource Include="Images\PNG\Patterns\upholstery.png" />
+    <EmbeddedResource Include="Images\PNG\Patterns\waves.png" />
+    <EmbeddedResource Include="Images\PNG\Patterns\yin-yang.png" />
+    <EmbeddedResource Include="Images\PNG\Patterns\marrakesh.png" />
+    <EmbeddedResource Include="Images\PNG\Patterns\tartan.png" />
+    <EmbeddedResource Include="Images\PNG\Patterns\arrows.png" />
+    <EmbeddedResource Include="Images\PNG\Patterns\seigaiha.png" />
+    <EmbeddedResource Include="Images\PNG\Patterns\japanese-cube.png" />
+    <EmbeddedResource Include="Images\PNG\Patterns\microbial-mat.png" />
+    <EmbeddedResource Include="Images\PNG\Patterns\pyramid.png" />
+    <EmbeddedResource Include="Images\PNG\Patterns\shippo.png" />
+    <EmbeddedResource Include="Images\PNG\Patterns\blueprint-grid.png" />
+    <EmbeddedResource Include="Images\PNG\Patterns\bricks.png" />
+    <EmbeddedResource Include="Images\PNG\Patterns\weave.png" />
+    <EmbeddedResource Include="Images\PNG\Patterns\carbon.png" />
+    <EmbeddedResource Include="Images\PNG\Patterns\checkerboard.png" />
+    <EmbeddedResource Include="Images\PNG\Patterns\cicada-stripes.png" />
+    <EmbeddedResource Include="Images\PNG\Patterns\diagonal-checkerboard.png" />
+    <EmbeddedResource Include="Images\PNG\Patterns\diagonal-stripes.png" />
+    <EmbeddedResource Include="Images\PNG\Patterns\horizontal-stripes.png" />
+    <EmbeddedResource Include="Images\PNG\Patterns\vertical-stripes.png" />
+    <EmbeddedResource Include="Images\PNG\Patterns\zig-zag.png" />
+    <EmbeddedResource Include="Images\SVG\Patterns\chevrons.svg" />
+    <EmbeddedResource Include="Images\SVG\Patterns\concentric_circles.svg" />
+    <EmbeddedResource Include="Images\SVG\Patterns\diamonds.svg" />
+    <EmbeddedResource Include="Images\SVG\Patterns\diamonds_with_base_color.svg" />
+    <EmbeddedResource Include="Images\SVG\Patterns\diamonds_with_color.svg" />
+    <EmbeddedResource Include="Images\SVG\Patterns\hexagons.svg" />
+    <EmbeddedResource Include="Images\SVG\Patterns\mosaic_squares.svg" />
+    <EmbeddedResource Include="Images\SVG\Patterns\nested_squares.svg" />
+    <EmbeddedResource Include="Images\SVG\Patterns\octagons.svg" />
+    <EmbeddedResource Include="Images\SVG\Patterns\overlapping_circles.svg" />
+    <EmbeddedResource Include="Images\SVG\Patterns\overlapping_rings.svg" />
+    <EmbeddedResource Include="Images\SVG\Patterns\plaid.svg" />
+    <EmbeddedResource Include="Images\SVG\Patterns\plus_signs.svg" />
+    <EmbeddedResource Include="Images\SVG\Patterns\sine_waves.svg" />
+    <EmbeddedResource Include="Images\SVG\Patterns\squares.svg" />
+    <EmbeddedResource Include="Images\SVG\Patterns\tessellation.svg" />
+    <EmbeddedResource Include="Images\SVG\Patterns\triangles.svg" />
+    <EmbeddedResource Include="Images\SVG\Patterns1\BlueprintGrid.svg" />
+  </ItemGroup>
+</Project>

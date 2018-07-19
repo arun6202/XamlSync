@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100'>
+<rect width='100' height='100' fill='#bb7817'/>
+<g transform='rotate(45)'>
+<rect width='99' height='25' fill='#a9ce00'/>
+<rect y='-50' width='99' height='25' fill='#a9ce00'/>
+</g>
+</svg>

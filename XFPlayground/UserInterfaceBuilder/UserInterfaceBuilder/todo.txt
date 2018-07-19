@@ -1,0 +1,2 @@
+﻿        // todo change to Skia sharp Generated image rather than manually formed XML
+remove bool isRandom = true variable everywhere

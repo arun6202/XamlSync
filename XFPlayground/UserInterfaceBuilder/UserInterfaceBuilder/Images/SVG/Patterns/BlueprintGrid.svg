@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<svg xmlns='http://www.w3.org/2000/svg' width='1000' height='1000'>
+    <rect width='1000' height='1000' fill='#269' />
+    <g fill='#6494b7'>
+        <rect width='1000' height='1' y='20' />
+        <rect width='1000' height='1' y='40' />
+        <rect width='1000' height='1' y='60' />
+        <rect width='1000' height='1' y='80' />
+        <rect width='1' height='1000' x='20' />
+        <rect width='1' height='1000' x='40' />
+        <rect width='1' height='1000' x='60' />
+        <rect width='1' height='1000' x='80' />
+    </g>
+    <rect width='1000' height='1000' fill='none' stroke-width='2' stroke='#fff' />
+</svg>
