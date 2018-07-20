@@ -1,1 +1,1 @@
-﻿﻿dotnet run --no-restore --no-dependencies --no-build --verbosity m --project D:\XamlSync\XFPlayground\XamlFileWatcher\XamlFileWatcher.csproj
+﻿dotnet run --no-restore --no-dependencies --no-build --verbosity m --project D:\XamlSync\XFPlayground\XamlFileWatcher\XamlFileWatcher.csproj

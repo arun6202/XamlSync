@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>HotReloadXAML</PackageId>
+    <Authors>arun.balakrishnan@live.com</Authors>
   </PropertyGroup>
 
   <ItemGroup>

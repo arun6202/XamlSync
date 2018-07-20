@@ -1,0 +1,15 @@
+External Training (with samples from Github)
+
+*	XAML- with a complex UI example
+*	Data Binding and MVVM
+*	Dependency Injection
+*	LinQ to DB
+*	Threading
+*	Xamarin Profiler
+*	Wrap up 
+
+	*	Optimizing the Compile Resources and Libraries
+	*	Tweaking the compiler settings for Processing
+	*	Localization using RESX Resource
+	*	Testing and Publishing
+
