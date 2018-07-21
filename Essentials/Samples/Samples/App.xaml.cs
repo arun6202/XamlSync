@@ -1,10 +1,8 @@
-﻿using Samples.View;
-using Xamarin.Essentials;
+﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
-
 namespace Samples
 {
     public partial class App : Application
@@ -13,15 +11,12 @@ namespace Samples
         {
             InitializeComponent();
 
-            VersionTracking.Track();
-
-            MainPage = new NavigationPage(new HomePage());
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()
         {
-            // set UWP Map Key
-            Geocoding.MapKey = "RJHqIE53Onrqons5CNOx~FrDr3XhjDTyEXEjng-CRoA~Aj69MhNManYUKxo6QcwZ0wmXBtyva0zwuHB04rFYAPf7qqGJ5cHb03RCDw1jIW8l";
+            // Handle when your app starts
         }
 
         protected override void OnSleep()
