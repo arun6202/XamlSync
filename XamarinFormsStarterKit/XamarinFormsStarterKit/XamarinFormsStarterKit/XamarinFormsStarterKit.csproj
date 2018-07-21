@@ -1,0 +1,129 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DevsDNA.XFParallax" Version="1.0.0" />
+    <PackageReference Include="DK.SlidingPanel" Version="2.1.0" />
+    <PackageReference Include="LayoutCreator" Version="1.0.1" />
+    <PackageReference Include="LiteDB" Version="4.1.2" />
+    <PackageReference Include="Naxam.I18n" Version="1.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="PCLCrypto" Version="2.0.147" />
+    <PackageReference Include="Plugins.Forms.ButtonCircle" Version="2.0.2" />
+    <PackageReference Include="Rg.Plugins.Popup" Version="1.0.4" />
+    <PackageReference Include="SkiaSharp.Views.Forms" Version="1.60.0" />
+    <PackageReference Include="SlideOverKit" Version="2.1.5" />
+    <PackageReference Include="Splat" Version="3.0.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.2.1" />
+    <PackageReference Include="System.IO.Compression.ZipFile" Version="4.3.0" />
+    <PackageReference Include="Xam.Plugins.Forms.ExtendedCell" Version="1.0.0.20" />
+    <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="2.0.2" />
+    <PackageReference Include="Xam.Plugins.Forms.ProgressRing" Version="0.1.2" />
+    <PackageReference Include="Xam.Plugins.Forms.RoundedBoxView" Version="1.0.0.7" />
+    <PackageReference Include="Xam.Plugins.Notifier" Version="2.1.0" />
+    <PackageReference Include="Xam.Plugins.Settings" Version="3.1.1" />
+    <PackageReference Include="Xam.Plugins.TextToSpeech" Version="3.3.2" />
+    <PackageReference Include="Xam.Plugins.Vibrate" Version="3.0.1" />
+    <PackageReference Include="Xamanimation" Version="1.1.0" />
+    <PackageReference Include="Xamarin.Controls.SignaturePad.Forms" Version="2.3.0" />
+    <PackageReference Include="Xamarin.FFImageLoading" Version="2.3.6" />
+    <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.3.6" />
+    <PackageReference Include="Xamarin.FFImageLoading.Svg.Forms" Version="2.3.6" />
+    <PackageReference Include="Xamarin.Forms" Version="3.1.0.346973-nightly" />
+    <PackageReference Include="Xamarin.Forms.DataGrid" Version="2.0.0" />
+    <PackageReference Include="XamForms.Controls.Calendar" Version="1.1.1" />
+    <PackageReference Include="Ansuria.XFGloss" Version="1.1.3" />
+    <PackageReference Include="Xamarin.Forms.RangeSlider" Version="0.7.33" />
+    <PackageReference Include="Xamarin.RangeSlider" Version="0.7.33" />
+    <PackageReference Include="DLToolkit.Forms.Controls.FlowListView" Version="2.0.10" />
+    <PackageReference Include="DLToolkit.Forms.Controls.TagEntryView" Version="1.0.4" />
+    <PackageReference Include="DLToolkit.Forms.Controls.ImageCropView" Version="1.0.6" />
+    <PackageReference Include="Plugin.Multilingual" Version="1.0.2" />
+    <PackageReference Include="Xamarin.CustomControls.RepeaterView" Version="1.2.2" />
+    <PackageReference Include="Xamarin.FFImageLoading.Transformations" Version="2.3.6" />
+    <PackageReference Include="Naxam.BottomTabbedPage" Version="0.2.0.2" />
+    <PackageReference Include="Polly" Version="5.9.0" />
+    <PackageReference Include="SkiaSharp.Extended" Version="1.60.0" />
+    <PackageReference Include="SkiaSharp.Svg" Version="1.60.0" />
+    <PackageReference Include="Xam.Plugins.Messaging" Version="5.2.0" />
+    <PackageReference Include="Xamarin.CustomControls.AccordionView" Version="1.0.8" />
+    <PackageReference Include="Bogus" Version="22.0.8" />
+    <PackageReference Include="Plugin.GridViewControl" Version="1.0.9" />
+    <PackageReference Include="IdentityModel" Version="3.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="XamarinFormsStarterKit.Xamarin.FormsBook.Toolkit\Properties\AssemblyInfo.cs" />
+    <Compile Remove="LayoutGallery\armcha_Ribble\XAML\DashBoardView.xaml.cs" />
+    <Compile Remove="LayoutGallery\armcha_Ribble\images\reference\XAML\DashBoardView.xaml.cs" />
+    <Compile Remove="LayoutGallery\k0shk0sh_FastHub\XAML\DashBoardView.xaml.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="App.xaml.cs">
+      <DependentUpon>*.xaml</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="MainPage.xaml.cs">
+      <DependentUpon>*.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="LayoutGallery\kickstarter_android-oss\XAML\BackerView.xaml.cs">
+      <DependentUpon>BackerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="XamarinFormsStarterKit.Xamarin.FormsBook.Toolkit\MyPage.xaml.cs">
+      <DependentUpon>MyPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="LayoutGallery\armcha_Ribble\XAML\DetailsView.xaml.cs">
+      <DependentUpon>DetailsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="LayoutGallery\k0shk0sh_FastHub\XAML\DashBoardView.xaml.cs">
+      <DependentUpon>DashBoardView.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="LayoutGallery\airbnb_lottie-android\images\reference\" />
+    <Folder Include="LayoutGallery\kickstarter_android-oss\" />
+    <Folder Include="LayoutGallery\kickstarter_android-oss\images\" />
+    <Folder Include="LayoutGallery\kickstarter_android-oss\XAML\" />
+    <Folder Include="LayoutGallery\kickstarter_android-oss\images\reference\" />
+    <Folder Include="LayoutGallery\kickstarter_android-oss\images\target\" />
+    <Folder Include="LayoutGallery\VisualElementColorizer\" />
+    <Folder Include="LayoutGallery\VisualElementColorizer\XAML\" />
+    <Folder Include="LayoutGallery\armcha_Ribble\" />
+    <Folder Include="LayoutGallery\armcha_Ribble\images\" />
+    <Folder Include="LayoutGallery\armcha_Ribble\XAML\" />
+    <Folder Include="LayoutGallery\armcha_Ribble\images\target\" />
+    <Folder Include="LayoutGallery\armcha_Ribble\images\reference\" />
+    <Folder Include="LayoutGallery\k0shk0sh_FastHub\" />
+    <Folder Include="LayoutGallery\k0shk0sh_FastHub\images\" />
+    <Folder Include="LayoutGallery\k0shk0sh_FastHub\XAML\" />
+    <Folder Include="LayoutGallery\k0shk0sh_FastHub\images\Target\" />
+    <Folder Include="LayoutGallery\k0shk0sh_FastHub\images\reference\" />
+    <Folder Include="LayoutGallery\k0shk0sh_FastHub\XAML\contentview\" />
+    <Folder Include="DesignKitTemplates\" />
+    <Folder Include="DesignKitTemplates\Books\" />
+    <Folder Include="DesignKitTemplates\Books\XAML\" />
+    <Folder Include="DesignKitTemplates\Books\Images\" />
+    <Folder Include="CheatSheets\" />
+    <Folder Include="Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="LayoutGallery\kickstarter_android-oss\images\reference\Example3.gif" />
+    <None Remove="LayoutGallery\kickstarter_android-oss\images\target\dashboardUWP.PNG" />
+    <None Remove="LayoutGallery\kickstarter_android-oss\images\target\dashboardUWPFULL.PNG" />
+    <None Remove="XamarinFormsStarterKit.Xamarin.FormsBook.Toolkit\XamarinFormsStarterKit.Xamarin.FormsBook.Toolkit.csproj" />
+    <None Remove="LayoutGallery\VisualElementColorizer\XAML\replace.svg" />
+    <None Remove="Images\Jupiter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="LayoutGallery\armcha_Ribble\images\reference\XAML\BackerView.xaml" />
+    <EmbeddedResource Remove="LayoutGallery\armcha_Ribble\images\reference\XAML\DashBoardView.xaml" />
+    <EmbeddedResource Remove="LayoutGallery\VisualElementColorizer\XAML copy\Tester.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LayoutGallery\VisualElementColorizer\XAML\replace.svg" />
+    <EmbeddedResource Include="Images\Jupiter.png" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Grid xmlns="http://xamarin.com/schemas/2014/forms" 
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+      WidthRequest="90" HeightRequest="110" Padding="0"
+             xmlns:shapes="clr-namespace:Xamarin.Forms.Shapes;assembly=Xamarin.Forms.Shapes"
+            x:Class="Flexibility.Shared.AchievementView">
+    <Grid.Resources>
+        <Style x:Key="FAFontStyle" TargetType="Label">  
+            <Setter Property="FontSize">
+                <Setter.Value>
+                    <OnPlatform x:TypeArguments="x:Double">
+                        <On Platform="iOS" Value="24"></On>
+                        <On Platform="WinRT, UWP, Android" Value="18"></On>
+                    </OnPlatform>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="VerticalTextAlignment"
+                        Value="Center" />
+            <Setter Property="HorizontalTextAlignment"
+                        Value="Center" />
+            <Setter Property="FontFamily">
+                <Setter.Value>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="UWP" Value="Segoe MDL2 Assets"></On>
+                        <On Platform="iOS" Value="FontAwesome"></On>
+                        <On Platform="Android" Value="FontAwesome.otf#FontAwesome"></On>
+                    </OnPlatform>
+                </Setter.Value>
+            </Setter>
+        </Style> 
+    </Grid.Resources>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="90"/>
+        <RowDefinition Height="20"/>
+    </Grid.RowDefinitions>
+
+    <Button Grid.Row="0"
+            BorderColor="#fff"
+            BorderWidth="1"
+            BackgroundColor="#4D000000"
+            HeightRequest="90" CornerRadius="45"
+            Style="{StaticResource IconFontButton}"
+            FontSize="32"
+            Text="{Binding Icon}"/>
+    
+     <Label Grid.Row="1"
+            Text="{Binding Achievement}" 
+            Margin="0,4,0,0"
+            HeightRequest="20"
+            FontSize="9" 
+            HorizontalTextAlignment="Center" 
+            HorizontalOptions="CenterAndExpand"/>
+
+
+</Grid>
